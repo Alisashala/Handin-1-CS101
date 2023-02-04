@@ -39,23 +39,34 @@ public class main {
             System.out.println(firstName + "." + middleName + "." + " " + lastName);
         }
 
-        System.out.println("maximum number is: " + maximun(10,24,56));
-        System.out.println("minimum number is: " + minimum(12,34,80));
+        System.out.println("Maximum number is: " + maximun(10,24,56));
+        System.out.println("Minimum number is: " + minimum(12,34,80));
 
 
-    //Classes and objects
+    // 5 - Classes and objects:
 
-    //Car & driver:
+    //Car & driver
         Driver person1 = new Driver("Lalita", 21);
-        System.out.println("Driver: " + person1.getName() + " " + person1.getAge());
         person1.drive();
 
-
         Car mercedes = new Car("Mercedes", 750000.00);
-        System.out.println("Car: " + mercedes.getModel() + " " + mercedes.getPrice());
         mercedes.stop();
         mercedes.start();
         mercedes.move();
+
+
+    //Employee
+        Employee employee1 = new Employee("Bente", "Hansen", -39.0);
+        Employee employee2 = new Employee("Birgitte", "Larsen", 43500.00);
+
+        System.out.println(employee1);
+        System.out.println(employee2);
+        System.out.println("Bentes yearly salary is: " + employee1.getYearlySalary());
+        System.out.println("Birgittes yearly salary is: " + employee2.getYearlySalary());
+        //10% raise in salary
+        System.out.println(employee1.getYearlySalary() * 1.1);
+        System.out.println(employee2.getYearlySalary() * 1.1);
+
     }
 
     // 2 - Define two methods to print the maximum and the minimum number respectively among three numbers
@@ -67,11 +78,4 @@ public class main {
     }
 
 
-
 }
-
-
-
-
-
-

@@ -6,13 +6,6 @@ public class Car {
         this.model = model;
         this.price = price;
     }
-    // get model and price
-    public String getModel() {
-        return this.model;
-    }
-    public double getPrice() {
-        return this.price;
-    }
 
     public void stop() {
         System.out.println("the car stopped");
